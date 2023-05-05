@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column nowrap;
+}

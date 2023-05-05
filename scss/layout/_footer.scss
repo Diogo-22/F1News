@@ -1,0 +1,19 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    background-color: $ALT-COLOR;
+    color: $WHITE-COLOR;
+    font-size: 0.5em;
+    border-top: 1px solid $WHITE-COLOR;
+
+    .footer__div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+
+        .footer__paragraph {
+            text-align: center;
+        }
+    }
+}
+

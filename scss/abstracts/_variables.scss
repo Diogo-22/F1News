@@ -1,0 +1,20 @@
+//:root {}
+
+    /* COLORS */
+
+    $HEADER-BGCOLOR: #2f2e2e;
+    $HEADER-COLOR: #dbc21e;
+    $ALT-COLOR: #b72222;
+    $BGCOLOR: #878686;
+    $LIGHT-COLOR: rgb(200, 200, 200);
+    $WHITE-COLOR: whitesmoke;
+    $BLACK-COLOR: black;
+
+    /* BORDERS */
+
+    $BORDER: 2px solid $HEADER-COLOR;
+    $BORDER-RADIUS: 30px ;
+
+    /* FONTS */
+    $FONT-SIZE: clamp(0.35rem , 4vw, 1rem);
+    $XL-FONT-SIZE: clamp(1rem, 6vw, 1.75rem);

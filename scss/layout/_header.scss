@@ -1,0 +1,157 @@
+header {
+    background-color: $HEADER-BGCOLOR;
+    color: $HEADER-COLOR;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .header__title__line {
+        padding: 0rem 0.5rem 0 0.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1rem;
+
+        .header__div {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            .header__anchor {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                .header__img {
+                    width: 2.8em;
+                    height: auto;
+                }
+                .header__img:hover {
+                    transition: 0.5s;
+                    scale: 1.1;
+                }
+
+                .header__web__title {
+                    font-family: "Montserrat";
+                    letter-spacing: 0.35vw;
+                    margin-left: 1rem;
+                    font-size: $XL-FONT-SIZE;
+                    color: $WHITE-COLOR;
+                }
+                .header__web__title:hover {
+                    transition: 0.5s;
+                    scale: 1.1;
+                }
+
+            }
+        }
+
+        
+    
+    .menu-button {
+        background-color: transparent;
+        border: none;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;        
+
+    }
+}
+
+}
+.menu-icon, .menu-icon::before, .menu-icon::after {
+    background-color: $HEADER-COLOR;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0,5s;
+}
+
+.menu-icon::before, .menu-icon::after {
+    content: "";
+}
+
+.menu-icon::before {
+    transform: translate(0px, -12px);
+}
+
+.menu-icon::after {
+    transform: translate(0px, 12px);
+}
+
+:is(header:hover, header:focus-within) .menu-icon {
+    background-color: transparent;
+    transform: rotate(720deg);
+    transition: all 1.2s;
+}
+
+:is(header:hover, header:focus-within) .menu-icon::before {
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+:is(header:hover, header:focus-within) .menu-icon::after {
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+}
+
+    :is(header:hover, header:focus-within) nav {
+    display: block;
+    background-color: $HEADER-BGCOLOR;
+}
+
+
+nav {
+    display: none;
+    transform-origin: top center;
+    animation: showMenu 0.5s ease-in-out forwards;
+}
+
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+
+    80% {
+        transform: scaleY(1.2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+nav li {
+    padding: 0.5rem;
+    border-top: 1px solid $HEADER-COLOR;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+nav a:any-link {
+    color: $HEADER-COLOR;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
