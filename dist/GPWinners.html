@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GP Winners</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/gpwmain.js" type="module"></script>
  </head>
  <body>
             <header class="header">
                 <section class="header__title__line"> 
                     <div class="header__div">
                         <a href="index.html" class="header__anchor">
-                            <img src="/dist/img/Meu projeto.png" alt="site logo" width="200" height="200" class="header__img">
+                            <img src="img/Meu projeto.png" alt="site logo" width="200" height="200" class="header__img">
                             <h1 class="header__web__title nowrap">F1 News</h1>
                         </a>
                     </div>
@@ -36,10 +37,12 @@
             </header>
             <main class="gpwmain">
                 <select id="year-dropdown">
-                    <option value="">Select Year</option>
-                  </select>
-                <p class="fu">helloo mf</p>                  
-
+                    <option value="null">Select Year</option>
+                  </select>                 
+                <select id="round-dropdown">
+                    <option value="null">Select Round</option>
+                  </select>  
+                  <div class="winner off"></div>               
             </main>
 
     

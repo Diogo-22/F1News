@@ -1,5 +1,6 @@
 const initApp = () => {
     limitNewssize();
+   
 
 
 }
@@ -21,7 +22,7 @@ if (mediaQuery.matches) {
 } */
     console.log(maxWords)
     let lTracker = numOfStorys.length - 1;
-    for (i = 0; i<numOfStorys.length; i++) {
+    for (let i = 0; i<numOfStorys.length; i++) {
         //console.log(numOfStorys[i].innerHTML)
         /* console.log(i)
         console.log(numOfStorys[i].innerHTML) */
@@ -30,7 +31,7 @@ if (mediaQuery.matches) {
         const wordCap = words.slice(0, maxWords).join(" ");
         const finalText = wordCap + " (...)";
 
-        for (l = numOfStorys.length - 1; l >= 0;) {
+        for (let l = numOfStorys.length - 1; l >= 0;) {
             l = lTracker;
             
         const mainStory = document.getElementById(l)
