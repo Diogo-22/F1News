@@ -1,7 +1,7 @@
 
 export const getRounds = async (selectedYear) => {
     const urlvariable = selectedYear;
-    const url = `http://ergast.com/api/f1/${urlvariable}.json`;
+    const url = `https://ergast.com/api/f1/${urlvariable}.json`;
     try {
         const getRound = await fetch(url);
         const roundJson = await getRound.json();
@@ -16,7 +16,7 @@ export const getRounds = async (selectedYear) => {
 export const getGPWinners = async (selectedYear, selectedRound) => {
     const selectYear = selectedYear;
     const selectRound = selectedRound;
-    const url = `http://ergast.com/api/f1/${selectYear}/${selectRound}/results.json`;
+    const url = `https://ergast.com/api/f1/${selectYear}/${selectRound}/results.json`;
     try {
         const getWinner = await fetch(url);
         const winnerJson = await getWinner.json();
