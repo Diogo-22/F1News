@@ -29,5 +29,5 @@ const standings = async (year) => {
 
     const arrays = await getStandings(year);
     console.log(arrays)
-    createStandingsTable(arrays);
+    createStandingsTable(arrays, year);
 }
