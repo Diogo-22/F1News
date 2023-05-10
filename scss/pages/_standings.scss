@@ -1,0 +1,62 @@
+.main {
+    background-color: $BGCOLOR;
+    background-image: linear-gradient($HEADER-BGCOLOR, $WHITE-COLOR);
+}
+.standings_title{
+    text-align: center;
+    color: aliceblue;
+    margin: 0.25em 0 0.6em 0;
+}
+.seasonChoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.span {
+    color: aliceblue;
+    margin-right: 0.6em;
+}
+#year-dropdown2 {
+    font-size: 0.8rem;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid $HEADER-COLOR;
+    background-color: $HEADER-BGCOLOR;
+    color: aliceblue;
+    }
+.grid_standings{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr 2fr 1fr 1fr);
+    font-size: 0.5rem;
+    //row-gap: 0.4em;
+    //column-gap: 0.4em;
+    //background-color: $LIGHT-COLOR;
+    background-color: rgba(255, 255, 255, 0.645);
+    margin: 0.2em;
+    margin-top: 1em;
+    border-bottom: 2px solid black;
+
+    div {
+        border: 2px solid black;
+        padding: 0.4em 0.2em;
+        //margin: 0 0.15em;
+        border-bottom: 0;
+        border-right: 0;
+    }
+}
+.position {
+    grid-column: 1 / 2;
+}
+.drivername {
+    grid-column: 2 / 3;
+}
+.constructor {
+    grid-column: 3 / 4;
+}
+.points {
+    grid-column: 4 / 5;
+}
+.wins.wins {
+    grid-column: 5 / 6;
+    border-right: 2px solid black;
+}
