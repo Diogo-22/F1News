@@ -20,12 +20,16 @@ export const getGPWinners = async (selectedYear, selectedRound) => {
     try {
         const getWinner = await fetch(url);
         const winnerJson = await getWinner.json();
+        const gpInfo = winnerJson.MRData.RaceTable.Races[0].raceName;
+        console.log(gpInfo)
         const Winnerinfo = winnerJson.MRData.RaceTable.Races[0].Results[0].Driver;
         const givenName = Winnerinfo.givenName;
         const lastName = Winnerinfo.familyName;
         const Winner = givenName + " " + lastName;
-        //console.log(WinnerJson);
-        return Winner;
+        console.log(Winner);
+        const results = [Winner, gpInfo]
+        console.log(results)
+        return results;
     } catch (err) {
         console.error(err);
     }

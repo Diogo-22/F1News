@@ -32,9 +32,10 @@ const initApp = () => {
         const selectedOption = this.value;
         //console.log(selectedOption);
         SelectedRound = selectedOption;
-        const GPwinner = await GetGPWinner(SelectedYear, SelectedRound);
-        console.log(GPwinner)
-        presentWinner(GPwinner);
+        
+        const results = await getGPWinners(SelectedYear, SelectedRound);
+        console.log(results)
+        presentWinner(results, SelectedYear);
       });
     
     
@@ -43,7 +44,8 @@ document.addEventListener("DOMContentLoaded", initApp);
 
 
 const GetGPWinner = async (SelectedYear, SelectedRound) => {
-    const Winner = await getGPWinners(SelectedYear, SelectedRound);
-    
-    return Winner;
+    const Result = await getGPWinners(SelectedYear, SelectedRound);
+    const Winner = Result[0];
+    const GpInfo = Result[1];
+    return Winner, GpInfo;
 }

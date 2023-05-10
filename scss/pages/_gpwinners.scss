@@ -2,8 +2,24 @@
     background-color: $BGCOLOR;
     background-image: linear-gradient($HEADER-BGCOLOR, $WHITE-COLOR);
     min-height: 88vh;
+
+}
+.spanchoose {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1rem;
+    margin: 0.3em 0;
+}
+.gpwsection {
     display: grid;
     grid-template-columns: repeat(1, 1fr 1fr);
+
+}
+.gpwinnerstitle {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 0.4em 0;
 }
 #year-dropdown {
         font-size: 16px;
@@ -12,10 +28,9 @@
         border: 2px solid $HEADER-COLOR;
         background-color: $HEADER-BGCOLOR;
         color: aliceblue;
-        margin: 1em;
+        margin: 0.7em;
         grid-column: 1 / 2;
         
-        max-height: 240px;
     }
 #round-dropdown {
         font-size: 16px;
@@ -24,10 +39,10 @@
         border: 2px solid $HEADER-COLOR;
         background-color: $HEADER-BGCOLOR;
         color: aliceblue;
-        margin: 1em;
+        margin: 0.7em;
         grid-column: 2 / 3;
         
-        max-height: 240px;
+        
     }
 .winner {
     justify-content: center;

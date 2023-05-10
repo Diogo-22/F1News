@@ -26,11 +26,15 @@ export const dropdownroundList = (numOfRounds) => {
     dropdown.appendChild(option);
   }
 }
-export const presentWinner = (winner) => {
+export const presentWinner = (Results, Year) => {
   const div = document.querySelector(".winner");
-  if (winner) {
+  if (Results) {
     //console.log(winner)
-    div.textContent = winner;
+    const winner = Results[0];
+    const GpInfo = Results[1];
+
+    const textMessage = winner + " has won the " + GpInfo + " that took place in " + Year + "!";
+    div.textContent = textMessage;
     } else {
     
     div.textContent = "🏁Race is yet to take Place🏁";
