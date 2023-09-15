@@ -5,3 +5,11 @@
 img {
     display: block;
 }
+
+
+//@include mqmw(430px) {
+    .none.none.none {
+    display: none !important;
+}
+
+    

@@ -1,11 +1,25 @@
 const initApp = () => {
     limitNewssize();
-   
-
+    const closenav = document.querySelector(".menu-button");
+    closenav.addEventListener("click", closeNav);
 
 }
 document.addEventListener("DOMContentLoaded", initApp);
 
+const closeNav = () => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+if (mediaQuery.matches) {
+  // The viewport width is greater than or equal to 768 pixels
+  // Do something here
+  const nav = document.querySelector(".main__nav");
+    nav.classList.toggle("none");
+    console.log("logged")
+} 
+
+    
+
+}
 const storysFullContent = [];
 
 const limitNewssize = () => {

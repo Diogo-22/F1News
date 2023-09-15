@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Standings</title>
+    <link rel="stylesheet" href="css/main.min.css" />
     <script src="js/standingsmain.js" type="module"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <section class="header__title__line"> 
-            <div class="header__div">
-                <a href="index.html" class="header__anchor">
-                    <img src="img/Meu projeto.png" alt="site logo" width="200" height="200" class="header__img">
-                    <h1 class="header__web__title nowrap">F1 News</h1>
-                </a>
-            </div>
-            <button class="menu-button">
-                <div class="menu-icon header__div"></div>
-            </button>
-        </section>
-    
-        <nav>
-            <ul>
+      <section class="header__title__line">
+        <div class="header__div">
+          <a href="index.html" class="header__anchor">
+            <img
+              src="img/Meu projeto.png"
+              alt="site logo"
+              width="200"
+              height="200"
+              class="header__img"
+            />
+            <h1 class="header__web__title nowrap">F1 News</h1>
+          </a>
+        </div>
+        <button class="menu-button">
+          <div class="menu-icon header__div"></div>
+        </button>
+      </section>
+
+      <nav class="main__nav">
+        <!-- <ul>
                 <li><a href="GPWinners.html">GP Winners</a></li>
                 <li><a href="Standings.html">Standings</a></li>
-                <li><a href="#">Forum</a></li>
+                <li><a href="Champions.html">All F1 Champions</a></li>
                 <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+            </ul> -->
+      </nav>
     </header>
     <main class="main">
+      <h2 class="standings_title">Standings</h2>
+      <section class="seasonChoice">
+        <span class="span">Choose Season:</span>
 
-        <h2 class="standings_title">Standings</h2>
-        <section class="seasonChoice">
-            <span class="span">Choose Season:</span>
-            
-            <select id="year-dropdown2">
-                <option value="null">Select Year</option>
-            </select>
-        </section>
-        <section class="grid_standings">
-            
-            <div class="position">Position</div>
-            <div class="drivername">Driver</div>
-            <div class="constructor">Constructor</div>
-            <div class="points">Points</div>
-            <div class="wins">Wins</div>
-            <!-- <div class="position">1</div>
+        <select id="year-dropdown2">
+          <option value="null">Select Year</option>
+        </select>
+      </section>
+      <section class="grid_standings">
+        <div class="position">Position</div>
+        <div class="drivername">Driver</div>
+        <div class="constructor">Constructor</div>
+        <div class="points">Points</div>
+        <div class="wins">Wins</div>
+        <!-- <div class="position">1</div>
             <div class="drivername">Ham</div>
             <div class="constructor">Mercedes</div>
             <div class="points">290</div>
             <div class="wins">12</div> -->
-        </section>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

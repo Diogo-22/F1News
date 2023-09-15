@@ -1,12 +1,14 @@
 .main {
     background-color: $BGCOLOR;
     background-image: linear-gradient($HEADER-BGCOLOR, $WHITE-COLOR);
+    min-height: 88vh;
 }
 .standings_title{
     text-align: center;
     color: aliceblue;
     margin: 0.25em 0 0.6em 0;
 }
+
 .seasonChoice{
     display: flex;
     justify-content: center;
@@ -45,6 +47,8 @@
         border-right: 0;
     }
 }
+
+
 .position {
     grid-column: 1 / 2;
 }
